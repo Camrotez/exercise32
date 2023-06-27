@@ -5,12 +5,7 @@ const person = {
   age: 25,
 };
 
-const fP = {
-    id : person.id,
-    age : person.age
-}
-
-const json = JSON.stringify(fP);
+const json = JSON.stringify(person, ['id' , 'age']);
 
 
 console.log(json); // Should return: { "id": 1, "age": 25 }
